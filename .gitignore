@@ -1,0 +1,9 @@
+del
+delete
+tmp
+
+build
+cmake-build-*
+
+.idea
+.vscode

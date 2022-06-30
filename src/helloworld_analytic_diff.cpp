@@ -1,3 +1,5 @@
+// http://ceres-solver.org/nnls_tutorial.html#analytic-derivatives
+
 #include <ceres/ceres.h>
 
 #include <iostream>

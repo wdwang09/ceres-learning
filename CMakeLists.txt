@@ -6,14 +6,21 @@ if (NOT CMAKE_BUILD_TYPE)
 endif ()
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(Ceres REQUIRED)
 
-add_executable(hello_world src/helloworld.cpp)
-target_link_libraries(hello_world Ceres::ceres)
+add_executable(helloworld src/helloworld.cpp)
+target_link_libraries(helloworld Ceres::ceres)
 
 add_executable(helloworld_numeric_diff src/helloworld_numeric_diff.cpp)
 target_link_libraries(helloworld_numeric_diff Ceres::ceres)
 
 add_executable(helloworld_analytic_diff src/helloworld_analytic_diff.cpp)
 target_link_libraries(helloworld_analytic_diff Ceres::ceres)
+
+add_executable(powell src/powell.cpp)
+target_link_libraries(powell Ceres::ceres)
+
+add_executable(curve_fitting src/curve_fitting.cpp)
+target_link_libraries(curve_fitting Ceres::ceres)

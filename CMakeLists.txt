@@ -24,3 +24,6 @@ target_link_libraries(powell Ceres::ceres)
 
 add_executable(curve_fitting src/curve_fitting.cpp)
 target_link_libraries(curve_fitting Ceres::ceres)
+
+add_executable(bundle_adjuster src/BAL/bundle_adjuster.cpp src/BAL/bal_problem.cpp)
+target_link_libraries(bundle_adjuster Ceres::ceres)
